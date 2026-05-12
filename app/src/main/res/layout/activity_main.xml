@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcul des impôts locaux"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="25dp" />
+
+        <EditText
+            android:id="@+id/input_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/input_adresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/input_surface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surface en m²"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/input_pieces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de pièces"
+            android:inputType="number"
+            android:layout_marginBottom="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_piscine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piscine"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/button_calcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculer"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:text="Résultat ici"
+            android:padding="15dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
